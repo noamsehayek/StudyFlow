@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="18dp"
+    android:layout_marginBottom="14dp"
+    android:background="#FFFFFF">
+
+    <CheckBox
+        android:id="@+id/checkCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#000000"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Math homework"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toEndOf="@id/checkCompleted"
+        app:layout_constraintTop_toTopOf="@id/checkCompleted"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/taskType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Assignment"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="@id/taskTitle"
+        app:layout_constraintTop_toBottomOf="@id/taskTitle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- a thin divider line -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="14dp"
+        android:background="#E0E0E0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
